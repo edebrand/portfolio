@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact</title>
+    <link rel="stylesheet" href="SCSS/portfolio.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <div class="main_wrapper">
+        <header id="top">
+            <nav class="top_nav">
+                <div class="logo">
+                    <a href="index.html" title="retour à l'accueil"></a>
+                </div>
+    
+                <div class="central_buttons">
+                    <a href="about.html" class="about" href="about.html" type="button" title="à propos de moi">à propos</a>
+                    <a href="index.html#section02" class="portfolio" type="button" title="Mes projets récents">portfolio</a>
+                    <a href="docs/CV_E_Debrand_OFP_Janvier_2022.pdf" class="cv" title="consulter mon C.V." download>C.V.</a>
+                </div>
+    
+                <div class="socials_top">
+                    <a href="https://github.com/edebrand"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>
+                    <a href="https://www.facebook.com/EmmanuelUK38/"><span class="iconify" data-icon="fa-brands:facebook-f"></span></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-debrand-2466058"><span class="iconify" data-icon="fa-brands:linkedin-in"></span></a>
+                    <a href="https://www.instagram.com/emmfoto43/"><span class="iconify" data-icon="ph:instagram-logo-duotone"></span></a>
+                </div>
+            </nav>
+            <div class="top_nav_small_screens">
+                <div class="logo-small">
+                    <a href="index.html" title="retour à l'accueil"></a>
+                </div>
+                <div class="dropdown">
+                    <button class=dropbtn onclick="showDiv('div_drop')"><span class="iconify" data-icon="eva:menu-fill"></span></button>
+                </div>
+            </div>
+            <div id="div_drop" class="dropdown_small_nav" style="display:none">
+                <div class="small_nav_central_buttons">
+                    <a href="about.html" class="small_about" type="button">à propos</a>
+                    <a href="index.html#section02" class="small_portfolio" type="button">portfolio</a>
+                    <a href="docs/CV_E_Debrand_OFP_Janvier_2022.pdf" class="cv" title="consulter mon C.V." download>C.V.</a>
+                </div>
+                <div class="small_nav_socials_top">
+                    <a href="https://github.com/edebrand"><span class="iconify" data-icon="akar-icons:github-fill" style="color: #968c90;"></span></a>
+                    <a href="https://www.facebook.com/EmmanuelUK38/"><span class="iconify" data-icon="fa-brands:facebook-f" style="color: #968c90;"></span></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-debrand-2466058"><span class="iconify" data-icon="fa-brands:linkedin-in" style="color: #968c90;"></span></a>
+                    <ahref="https://www.instagram.com/emmfoto43/"><span class="iconify" data-icon="ph:instagram-logo-duotone" style="color: #968c90;"></span></a>
+                </div>
+            </div>
+        </header>
+        <div class="cont-bgColor">
+            <div class=contact_page>
+                <section class="text_contact">
+                    <h1><span class="dot_left">.</span>me contacter<span class="dot_right">.</span></h1><br/>
+                    <h2 class="question"> une question...</h2>
+                    <h2 class="projet">un projet...</h2>
+                    <h2 class="suggest">une suggestion...</h2></br></br>
+                    <p> Utilisez le <span class="acco-left">&#x0007B;</span><span class="formu"> formulaire </span><span class="acco-right">&#x0007D;</span></p>
+                </section>
+                <div class="contact_form">
+                    <form method="post" name="myemailform" action="contact_portfolio.php">
+                        <div class="first_line">
+                            <p>
+                                PRÉNOM*
+                            </p>
+                            <input type="text" name="firstName" id="fnameinput" placeholder="Jules" required>
+                        </div>
+                            
+                        <div class="second_line">
+                            <p>
+                                NOM*
+                            </p>
+                            <input type="text" name="lastName" id="fnameinput" placeholder="Dupont" required> 
+                        </div>    
+                        
+                        <div class="third_line">
+                            <p>
+                                EMAIL*
+                            </p>
+                            <input type="email" name="email" id="emailinput" placeholder="j.dupont@domaine.fr" required>
+                        </div> 
+                        <div class="message">
+                            <p>
+                                VOTRE MESSAGE
+                            </p>
+                            <textarea name="message" id="message" placeholder="Ecrire ici..."></textarea>
+                        </div>
+                        <div class="form_button">
+                            <input name="submit" type="submit" value="ENVOYER">
+                        </div>   
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2021 Designed by <span>Emmanuel Debrand</span></p>
+            <div class="bottom_buttons">
+                <a href="about.html" class="about" type="button" title="à propos de moi">à propos</a>
+                <a href="index.html" class="portfolio" type="button" title="mes projets récents">portfolio</a>
+                <a href="docs/CV_E_Debrand_OFP_Janvier_2022.pdf" class="cv" title="consulter mon C.V." download>C.V.</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
