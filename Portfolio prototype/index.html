@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i">
+    <link rel="stylesheet" type="text/css" href="SCSS/portfolio.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <header id="top">
+            <nav class="top_nav">
+                <div class="logo">
+                    <a href="index.html" title="retour à l'accueil"></a>
+                </div>
+    
+                <div class="central_buttons">
+                    <a href="about.html" class="about" href="about.html" type="button" title="à propos de moi">à propos</a>
+                    <a href="#section02" class="portfolio" type="button" title="Mes projets récents">portfolio</a>
+                    <a href="contact.html" class="contact" type="button" title="cliquez ici pour me contacter">contact</a>
+                    <a href="docs/CvE_Debrand_OFP_Janvier 2022.pdf" download class="cv" type="button" title="consulter mon C.V.">C.V.</a>
+                </div>
+    
+                <div class="socials_top">
+                    <a href="https://github.com/edebrand"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>
+                    <a href="https://www.facebook.com/EmmanuelUK38/"><span class="iconify" data-icon="fa-brands:facebook-f"></span></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-debrand-2466058"><span class="iconify" data-icon="fa-brands:linkedin-in"></span></a>
+                    <a href="https://www.instagram.com/emmfoto43/"><span class="iconify" data-icon="ph:instagram-logo-duotone"></span></a>
+                </div>
+            </nav>
+            <div class="top_nav_small_screens">
+                <div class="logo-small">
+                    <a href="index.html" title="retour à l'accueil"></a>
+                </div>
+                <div class="dropdown">
+                    <button class=dropbtn onclick="showDiv('div_drop')"><span class="iconify" data-icon="eva:menu-fill"></span></button>
+                </div>
+            </div>
+            <div id="div_drop" class="dropdown_small_nav" style="display:none">
+                <div class="small_nav_central_buttons">
+                    <a href="about.html" class="small_about" type="button">à propos</a>
+                    <a href="#section02" class="small_portfolio" type="button">portfolio</a>
+                    <a href="contact.html" class="small_contact" type="button">contact</a>
+                    <a href="docs/CvE_Debrand_OFP_Janvier 2022.pdf" download class="cv" type="button" title="consulter mon C.V.">C.V.</a>
+                </div>
+                <div class="small_nav_socials_top">
+                    <a href="https://github.com/edebrand"><span class="iconify" data-icon="akar-icons:github-fill" style="color: #968c90;"></span></a>
+                    <a href="https://www.facebook.com/EmmanuelUK38/"><span class="iconify" data-icon="fa-brands:facebook-f" style="color: #968c90;"></span></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-debrand-2466058"><span class="iconify" data-icon="fa-brands:linkedin-in" style="color: #968c90;"></span></a>
+                    <a href="https://www.instagram.com/emmfoto43/"><span class="iconify" data-icon="ph:instagram-logo-duotone" style="color: #968c90;"></span></a>
+                </div>
+            </div>
+        </header>
+        
+        <section class="container_center">
+            <div class="intro">
+                <a class="intro_left" href="about.html">
+                    <div class="text_left">
+                        <h1 class="design"><span class="dot_left">.</span>design<span class="dot_right">.</span></h1>
+                        <p>concepteur graphique de produits web</p>
+                    </div>
+                    <img class="designer_img" src="img/left_facetest291021.png"/>
+                </a>
+    
+                <a class="intro_right" href="#section02">
+                    <img class="developer_img" src="img/right_face_test291021.png"/>
+                    <div class="text_right">
+                     <h1><span class="chev_left">&lt;</span>dev<span class="chev_right">&gt;</span></h1>
+                        <p>front end développeur</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="section01" class="scroll-down">
+            <a href="#section02"><span></span></a>
+        </section>
+        <div id="section02" class="cube-carousel">
+            <h1 >Projets récents</h1>
+            <div class="background">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+               <div class="cube"></div>
+               <div class="cube"></div>
+               <div class="cube"></div>
+               <div class="cube"></div>
+                
+                <section class="three-d-container">
+			    <input type="radio" checked class="three-d-bullet a" name="three-d">
+			    <input type="radio" class="three-d-bullet b" name="three-d">
+			    <input type="radio" class="three-d-bullet c" name="three-d">
+			    <input type="radio" class="three-d-bullet d" name="three-d">
+			    <input type="radio" class="three-d-bullet e" name="three-d">
+			    <input type="radio" class="three-d-bullet f" name="three-d">
+			    <div class="three-d-cube">
+				    
+				    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal1">
+                            <img src="img/EIS.png" title="EcoIsCool">
+                        </a>
+				    </figure>
+                    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal2">
+                            <img src="img/cineflex.png" title="cinéflex">
+                        </a>
+				    </figure>
+				    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal3">
+                            <img src="img/sprint.png" title="Sprint">
+                        </a>
+				    </figure>
+				    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal4">
+                            <img src="img/bitmoji1.png" Title="portfolio">
+                        </a>
+				    </figure>
+				    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal5">
+                            <img src="img/logo99 ED orange.png" Title="en attente">
+                        </a>
+				    </figure>
+				    <figure class="three-d-item">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#Modal5">
+                            <img src="img/logo99Bordeaux.png" Title="en attente">
+                        </a>
+				    </figure>
+			   </div>
+            </div>
+		    </section>
+            <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">EcoIsCool</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                    <td class="title">Description :</td>
+                                    <td>Site EcoIsCool</td>
+                                </tr>
+                                <tr>
+                                    <td td class="title">But :</td>
+                                    <td>apprentissage formulaire de contact</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Date :</td>
+                                    <td>Octobre 2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Source :</td>
+                                    <td>Formation ACS</td>
+                                </tr>
+                                <tr>
+                                    <td td class="title">Tech :</td>
+                                    <td>HTML5 et CSS3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="link_site" href="#">voir le site</button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Cinéflex</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                    <td class="title">Description :</td>
+                                    <td>Site d'actualité cinématograhique</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">But :</td>
+                                    <td>apprentissage responsive + modal</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Date :</td>
+                                <td>Octobre 2021</td>
+                                </tr>
+                                <tr>
+                                <td class="title">Source :</td>
+                                <td>Formation ACS</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Tech :</td>
+                                    <td>HTML5, CSS3, Javascript</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="link_site" href="#">voir le site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Sprint</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                    <td class="title">Description :</td>
+                                    <td>Site Sprint</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">But :</td>
+                                    <td>Maquettage à partir d'une photo et intégration</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Date :</td>
+                                    <td>Octobre 2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Source :</td>
+                                    <td>Formation ACS</td>
+                                </tr>
+                                 <tr>
+                                    <td class="title">Tech :</td>
+                                    <td>Photoshop, Figma, HTML5, CSS3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="link_site" href="#">voir le site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Portfolio</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                    <td class="title">Description :</td>
+                                    <td>Portfolio personnel CDUI</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">But :</td>
+                                    <td>Réalisations et présentation personnelle</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Date :</td>
+                                    <td>Octobre-Novembre 2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Source :</td>
+                                    <td>Formation ACS</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Tech :</td>
+                                    <td>Figma, HTML5, CSS3, SASS, Javascript, JQuery, Boostrap</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button href="#section01" type="button" class="link_site" href="#">retour</button>
+                        </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="topBtn" title="top">&rsaquo;</button>
+    
+        <footer>
+            <p>&copy; 2021 Designed by <span>Emmanuel Debrand</span></p>
+            <div class="bottom_buttons">
+                <a href="about.html" class="about" type="button" title="à propos de moi">à propos</a>
+                <a href="index.html" class="portfolio" type="button" title="mes projets récents">portfolio</a>
+                <a href="contact.html" class="contact" type="button" title="me contacter">contact</a>
+                <a href="cv.html" class="cv" type="button" title="consulter mon C.V.">C.V.</a>
+            </div>
+        </footer>
+    </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
